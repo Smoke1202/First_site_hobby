@@ -1,0 +1,234 @@
+BODY {
+  font-family: a_DomIno;
+  margin: 0;
+  }
+
+@font-face {
+    font-family: a_DomIno;
+src: local("a_DomIno"),
+url("C:/Users/denpl/Desktop/Hobby site/fonts/a_DomIno_BoldItalic.ttf") format("truetype");
+}
+
+.background {
+    background-image: url('C:/Users/denpl/Desktop/Hobby site/image/backgroundPhoto.jpg');
+      background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+    width: 100%;
+    height: 60px;
+    font-family: 'lazer84', sans-serif;
+  cursor: pointer;
+  text-shadow: 1px -1px 0 hsl(290,100%,40%),
+               2px -2px 0 hsl(290,100%,40%),
+               3px -3px 0 hsl(280,100%,60%),
+               4px -4px 0 hsl(280,100%,60%),
+               5px -5px 0 hsl(260,100%,85%),
+               6px -6px 0 hsl(260,100%,85%);
+  color: hsl(0,100%,40%);
+  transition: all 0.5s;
+}
+
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+
+}
+
+.navigation a li{
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 20px;
+    color: #f7e5f4;
+}
+ 
+.navigation a:hover{
+text-shadow:   1px 1px 0 hsl(20,100%,50%),
+               2px 2px 0 hsl(20,100%,50%),
+               3px 3px 0 hsl(35,100%,50%),
+               4px 4px 0 hsl(35,100%,50%),
+               5px 5px 0 hsl(55,100%,65%),
+               6px 6px 0 hsl(55,100%,65%);
+    color: hsl(300,100%,30%);
+transition: all 0.5s;
+}
+
+
+table {
+	color: #f7e5f4;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+#p1, th {
+	float: left;
+}
+
+
+h1 {
+    color: #f7e5f4;
+}
+
+.colortext, a {
+    color: #f7e5f4;
+    padding-bottom: .25em;
+    text-decoration: none;
+}
+
+.colortext a:hover {
+    color: #d48ea6;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 20%;
+  border-bottom: 0;
+  padding-bottom: .3em;
+  text-decoration: none;
+}
+
+
+
+/*Анимация фотографии*/
+
+.hover-effect-btn {
+  position: relative;
+  width: 100%;
+  margin-left: 10px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  margin-left: 5px;
+  background: rgba(0, 0, 0, 0.5); /* Настройка цвета и прозрачности для блока с заголовком */
+  transition: background 0.5s ease;
+}
+.hover-effect-btn:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, 0.9); /* Настройка цвета и прозрачности для блока с заголовком при наведении */
+}
+.hover-effect-btn:hover .title {
+  top: 10%; /* Отступ сверху при наведении */
+}
+.button {
+  position: absolute;
+  width: 100%;
+  left:0;
+  top: 50%; /* Отступ сверху */
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+.button a {
+  padding: 15px 40px; /* Отступ */
+  text-align: center;
+  background: #801580; /* Цвет кнопки */
+  color: white; /* Цвет текста */
+  border: 1px solid white; /* Ширина, стиль и цвет границы */
+  z-index: 1; 
+}
+.hover-effect-btn:hover .button {
+  opacity: 1;
+}
+
+.button a:hover {
+    background-color: #ef65dc;
+    transition: 1s;
+    text-shadow:   1px -1px 0 hsl(290,100%,40%),
+               2px -2px 0 hsl(290,100%,40%),
+               3px -3px 0 hsl(280,100%,60%);
+           }
+
+
+.iconblock-5 {
+    position: relative;
+    margin:60px 0 20px 0;
+    border: 4px solid #6f8bee;
+    transition: transform 300ms ease, box-shadow 300ms ease;
+    text-align:center;
+    max-width: 350px;
+    max-height: 100px;
+}
+.iconblock-5 .icon {
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 60px;
+    transform: translate(-50%, -50%); 
+}
+.iconblock-5 .icon img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 32px;
+    transform: translate(-50%, -50%); 
+    color: #337AB7;
+    width: 32px;
+    height: 32px;
+}
+.iconblock-5 .icon svg path {
+    stroke-width: 8px;
+    stroke: #BDE1FF;
+    transition: stroke 300ms ease;       
+}
+.iconblock-5 .icon svg polygon {
+    fill: #f7e5f4; 
+}      
+.iconblock-5 h3 {
+    transition: all 0.7s ease 0s;
+    color: #f7e5f4;
+    font-size:20px;
+    margin:50px 0 10px 0;
+}    
+
+.iconblock-5:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 7px 10px 1px rgba(84, 84, 84, 0.5);         
+}
+
+#i1 h3:hover {
+    color: #337AB7;
+}  
+
+#i2 h3:hover {
+    color: #36acf2;
+}
+
+#i3 h3:hover {
+    color: #ff1a1b;
+}
+
+#i1:hover .icon svg path {
+    stroke: #337AB7; 
+}  
+
+#i2:hover .icon svg path {
+    stroke: #36acf2; 
+}
+
+#i3:hover .icon svg path {
+    stroke: #ff0000; 
+}
+
+footer {
+    background-color: #306;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    color: #f7e5f4;
+
+}
